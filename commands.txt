@@ -1,0 +1,4 @@
+/usr/local/Cellar/nasm/2.15.05/bin/nasm -fmacho64 myAsm.s
+clang++ -c main.cpp
+clang++ -o mySyscallProgram main.o myAsm.o
+./mySyscallProgram 
